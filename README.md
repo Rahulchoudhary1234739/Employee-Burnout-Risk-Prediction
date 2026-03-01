@@ -1,89 +1,106 @@
 # Employee Burnout Risk Prediction using Machine Learning
 
-## 📌 Overview
-Employee burnout is a growing concern in modern workplaces, affecting productivity, employee well-being, and retention. This project aims to predict the burnout risk score (0–1) of employees using machine learning regression techniques based on workplace and mental health indicators.
+## Overview
 
-This project was developed as part of a college-hosted Kaggle competition.
+Employee burnout is a critical issue in modern workplaces, impacting productivity, employee well-being, and organizational performance. This project focuses on predicting the burnout risk score of employees using machine learning regression models based on anonymized workplace and mental health data.
 
----
-
-## 🎯 Problem Statement
-Given anonymized employee data including job role, workload, stress level, work-life balance, sleep patterns, and mental health indicators, the objective is to build a regression model to accurately predict the burnout score.
-
-- Problem Type: Regression
-- Target Variable: `burnout_score` (Continuous value between 0 and 1)
-- Evaluation Metric: Root Mean Squared Error (RMSE)
+This project was developed as part of a college-hosted Kaggle competition centered around HR analytics and predictive modeling.
 
 ---
 
-## 📊 Dataset Features
-The dataset includes:
+## Problem Statement
 
-- Job Role
-- Workload Level
-- Work-Life Balance Score
-- Job Satisfaction
-- Stress Level
-- Sleep Hours
-- Mental Health Indicators
-- Demographic Information (Anonymized)
+Given employee-level data containing job role, workload, stress levels, work-life balance, sleep patterns, and other well-being indicators, the objective is to build a regression model that accurately predicts the burnout score.
+
+Problem Type: Regression  
+Target Variable: burnout_score (continuous value between 0 and 1)  
+Evaluation Metric: Root Mean Squared Error (RMSE)
 
 ---
 
-## 🧠 Machine Learning Workflow
+## Dataset Description
 
-### 1️⃣ Data Preprocessing
-- Handled missing values
-- Encoded categorical variables
-- Feature scaling (if applied)
-- Removed outliers (if applicable)
+The dataset consists of anonymized employee information, including:
 
-### 2️⃣ Exploratory Data Analysis (EDA)
-- Distribution analysis of burnout score
-- Correlation heatmap
-- Relationship between stress and burnout
-- Impact of work-life balance on burnout
+- Job role and department  
+- Workload level and working conditions  
+- Work-life balance score  
+- Job satisfaction level  
+- Stress level indicators  
+- Sleep and mental health related features  
+- Demographic attributes (anonymized)  
 
-### 3️⃣ Models Implemented
-- Linear Regression
-- Random Forest Regressor
-- Gradient Boosting / XGBoost (if used)
+Two datasets were provided:
+
+- Training dataset (with burnout_score)  
+- Test dataset (without burnout_score)  
 
 ---
 
-## 📈 Model Evaluation
+## Machine Learning Workflow
 
-Evaluation Metric: **RMSE (Root Mean Squared Error)**
+### 1. Data Preprocessing
 
-Best Model: *[Replace with your best model name]*  
-Achieved RMSE: *[Replace with your score]*
+- Loaded training and test datasets  
+- Handled missing values  
+- Applied Label Encoding to categorical features  
+- Ensured consistent preprocessing between train and test sets  
+- Set RANDOM_SEED = 42 for reproducibility  
 
-Lower RMSE indicates better predictive performance.
+### 2. Cross Validation Strategy
 
----
-
-## 🔍 Key Insights
-
-- High stress levels strongly correlate with burnout
-- Poor work-life balance significantly increases burnout risk
-- Low job satisfaction contributes to higher burnout score
-- Sleep patterns impact mental fatigue levels
+- Implemented KFold Cross Validation  
+- Evaluated models using RMSE across folds  
+- Reduced overfitting and improved generalization  
 
 ---
 
-## 🛠 Tech Stack
+## Models Implemented
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- XGBoost (if used)
+The following regression models were trained and evaluated:
+
+- Ridge Regression  
+- ExtraTreesRegressor  
+- LightGBM Regressor  
+- CatBoost Regressor  
+
+An ensemble/stacking approach was used to combine predictions from multiple models for improved performance.
 
 ---
 
-## 📁 Project Structure
+## Model Evaluation
+
+Evaluation Metric: Root Mean Squared Error (RMSE)
+
+Lower RMSE indicates better predictive accuracy.
+
+Best Model: Replace with your best model name  
+Final RMSE Score: Replace with your final score  
+
+---
+
+## Key Insights
+
+- Higher stress levels significantly increase burnout risk  
+- Poor work-life balance strongly correlates with higher burnout scores  
+- Job satisfaction has a noticeable inverse relationship with burnout  
+- Ensemble methods improve performance compared to individual models  
+
+---
+
+## Tech Stack
+
+- Python  
+- NumPy  
+- Pandas  
+- Scikit-learn  
+- LightGBM  
+- CatBoost  
+- Jupyter Notebook  
+
+---
+
+## Project Structure
 
 Employee-Burnout-Risk-Prediction/
 │── employee-burnout-prediction.ipynb  
@@ -92,7 +109,29 @@ Employee-Burnout-Risk-Prediction/
 
 ---
 
-## 🚀 How to Run
+## How to Run the Project
 
-1. Clone the repository
-2. Install dependencies:
+1. Clone the repository  
+2. Install dependencies using:
+
+   pip install -r requirements.txt  
+
+3. Open the notebook and run all cells  
+
+---
+
+## Future Improvements
+
+- Hyperparameter tuning using GridSearchCV or Optuna  
+- More advanced stacking strategies  
+- Feature importance analysis  
+- Model explainability using SHAP  
+- Deployment using Streamlit or Flask  
+
+---
+
+## Author
+
+Rahul Choudhary  
+B.Tech CSE (Data Science)  
+ABES Engineering College  
