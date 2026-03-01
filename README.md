@@ -42,11 +42,13 @@ Achieved RMSE: 0.06104
 - Scikit-learn
 - Matplotlib / Seaborn
 - XGBoost
+
 Structure
-- Employee-Burnout-Risk-Prediction/
+ Employee-Burnout-Risk-Prediction/
 │── employee-burnout-prediction.ipynb
 │── README.md
 │── requirements.txt
+
 How to run the Notebook
 1. Clone the repository
 2. Install dependencies using requirements.txt
