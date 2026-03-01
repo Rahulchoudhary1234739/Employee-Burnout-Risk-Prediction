@@ -10,6 +10,7 @@ The dataset includes:
 - Stress level
 - Sleep patterns
 - Mental health indicators
+- 
 - ## Exploratory Data Analysis
 
 - Analyzed distribution of burnout scores
@@ -19,19 +20,17 @@ The dataset includes:
 - Encoded categorical variables
 - Scaled numerical features
 - Created derived stress index feature
+- 
 - ## Models Implemented
-
 - Linear Regression
 - Random Forest Regressor
 - Gradient Boosting / XGBoost
+- 
 - ## Evaluation Metric
-
 Root Mean Squared Error (RMSE)
-
 Best Model: Random Forest Regressor  
 Achieved RMSE: 0.06104
 ## Key Factors Contributing to Burnout
-
 - High stress level
 - Poor work-life balance
 - Low job satisfaction
@@ -43,13 +42,16 @@ Achieved RMSE: 0.06104
 - Scikit-learn
 - Matplotlib / Seaborn
 - XGBoost
+Structure
 - Employee-Burnout-Risk-Prediction/
 │── employee-burnout-prediction.ipynb
 │── README.md
 │── requirements.txt
+How to run the Notebook
 1. Clone the repository
 2. Install dependencies using requirements.txt
 3. Run the Kaggle Notebook
+Future improvements:
 - Hyperparameter tuning using GridSearchCV
 - Cross-validation for better generalization
 - Deployment using Flask/Streamlit
