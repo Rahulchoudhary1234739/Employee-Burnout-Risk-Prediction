@@ -43,8 +43,9 @@ Achieved RMSE: 0.06104
 - Matplotlib / Seaborn
 - XGBoost
 
-Structure
+ Structure
  Employee-Burnout-Risk-Prediction/
+ 
 │── employee-burnout-prediction.ipynb
 │── README.md
 │── requirements.txt
@@ -53,7 +54,8 @@ How to run the Notebook
 1. Clone the repository
 2. Install dependencies using requirements.txt
 3. Run the Kaggle Notebook
-Future improvements:
+
+.Future improvements:
 - Hyperparameter tuning using GridSearchCV
 - Cross-validation for better generalization
 - Deployment using Flask/Streamlit
