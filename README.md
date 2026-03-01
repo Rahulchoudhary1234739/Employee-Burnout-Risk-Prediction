@@ -37,10 +37,20 @@ Achieved RMSE: 0.06104
 - Low job satisfaction
 - Long working hours
 - ## Tech Stack
-
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
 - Matplotlib / Seaborn
 - XGBoost
+- Employee-Burnout-Risk-Prediction/
+│── employee-burnout-prediction.ipynb
+│── README.md
+│── requirements.txt
+1. Clone the repository
+2. Install dependencies using requirements.txt
+3. Run the Kaggle Notebook
+- Hyperparameter tuning using GridSearchCV
+- Cross-validation for better generalization
+- Deployment using Flask/Streamlit
+- Model explainability using SHAP
