@@ -73,9 +73,8 @@ An ensemble/stacking approach was used to combine predictions from multiple mode
 Evaluation Metric: Root Mean Squared Error (RMSE)
 
 Lower RMSE indicates better predictive accuracy.
-
-Best Model: Replace with your best model name  
-Final RMSE Score: Replace with your final score  
+ 
+Final RMSE Score:0.06102
 
 ---
 
@@ -96,7 +95,7 @@ Final RMSE Score: Replace with your final score
 - Scikit-learn  
 - LightGBM  
 - CatBoost  
-- Jupyter Notebook  
+-Kaggle Notebook  
 
 ---
 
